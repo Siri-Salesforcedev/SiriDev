@@ -9,3 +9,4 @@
     <lightning:button label="Multiplication" onclick="{!c.MultiplyMe}"/>
     <lightning:button label="Division" onclick="{!c.Divideme}"/>
 </aura:component>
+
