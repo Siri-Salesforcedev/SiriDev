@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="input1" type="Integer"/>
+    <aura:attribute name="input2" type="Integer"/>
+    <aura:attribute name="result" type="Decimal"/>
+    <Lightning:input type="number" value="{!v.input1}" label="please enter First value" required="true"/>
+    <Lightning:input type="number" value="{!v.input2}" label="please enter Second value" required="true"/>
+    <lightning:button label="Addition" onclick="{!c.addme}"/>
+    <lightning:button label="Subtraction" onclick="{!c.Subtractme}"/>
+    <lightning:button label="Multiplication" onclick="{!c.MultiplyMe}"/>
+    <lightning:button label="Division" onclick="{!c.Divideme}"/>
+</aura:component>
