@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="Covid19APIWS" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="cases" type="integer" default=""/>
+    <aura:attribute name="todayCases" type="integer" default=""/>
+    <aura:attribute name="todayDeaths" type="integer" default=""/>
+    <aura:attribute name="active" type="integer" default=""/>
+    <aura:attribute name="critical" type="integer" default=""/>
+    <aura:attribute name="casesPerOneMillion" type="integer" default=""/>
+    <aura:attribute name="deathsPerOneMillion" type="integer" default=""/>
+    <aura:attribute name="testsPerOneMillion" type="integer" default=""/>
+    <aura:attribute name="counrty" type="String" default="India"/>
+    <aura:attribute name="jsonArray" type="Object[]"/>
+    <aura:attribute name="countryInfo" type="Object"/>
+    <aura:attribute name="SelectedCountry" type="String"/>
+    <div class="form-group" >
